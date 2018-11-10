@@ -1,0 +1,381 @@
+/*.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/
+
+.App {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  padding-left: 50px;
+  width: 100%;
+  padding: 5px 150px 5px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.button-list {
+  text-align: center;
+  z-index:2000;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.CardContainer{
+  margin-top: 20px;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.card-spacing {
+  height: 100%;
+  padding-top: 20px;
+}
+
+.card {
+  margin-top: 10px;
+  height: 650px;
+}
+
+.card-block {
+  height: 100%;
+}
+
+.card-footer {
+  margin-top: auto;
+}
+
+.row {
+  padding: 5px;
+}
+.box{
+  padding: 5px;
+}
+
+.gutter-10.row {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+.gutter-10 > [class^="col-"], .gutter-10 > [class^=" col-"] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.classWithPad { 
+  margin:10px; padding:10px; 
+}
+
+.content-container {
+  background-color: lightgray;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+}
+
+.elegantshd {
+  margin-top: 60px;
+  padding-top: 20px;
+  text-align: center;
+  color: #131313;
+  background-color: lightgray;
+  font-size: 50px;
+  letter-spacing: .15em;
+  text-shadow: 1px -1px 0 #767676, 
+              -1px 2px 1px #737272, 
+              -2px 4px 5px #767474, 
+              -3px 6px 10px #787777;
+}
+
+.realemboss {
+  margin-top: 20px;
+  font-size: 70px;
+  color: rgba(0,0,0,.6);
+  text-shadow: rgba(0,0,0,.2) 2px 6px 5px,
+              rgba(255,255,255,.4) 0 -4px 30px;
+}
+
+.twitterbtn {
+  background-color: #00aced;
+  color: white;
+}
+
+.twitterbtn:hover {
+  text-shadow: 2px 2px 4px #000000;
+  background-color: #589BB8;
+  border-color: black;
+}
+
+.btn-success {
+  width: 150px;
+}
+
+.btn-success:hover {
+  text-shadow: 2px 2px 4px #000000;
+  background-color: #0E9300;
+  border-color: black;
+}
+
+.ortext {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  margin: 20px 0 5px; 
+} 
+
+.ortext span { 
+  background: #eee;
+  padding:0 10px; 
+}
+
+.opaque {
+  box-shadow: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(51,51,51,0.9);
+  margin-bottom: 10px;
+}
+
+.blue-line {
+  border-top: 1px solid #b1b1b1;
+}
+
+.img {
+  height: 300px;
+}
+
+.text-muted-date {
+  float: left;
+  margin-left: -10px;
+}
+
+.text-muted-readtime {
+  float: right;
+  margin-right: -10px;
+  color: #589BB8;
+}
+
+.text-description {
+  margin-top: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  clear: both;
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+.text-title {
+  padding: 5px;
+  margin: -15px;
+  font-size: 20px;
+}
+
+.link-buttons {
+  margin-bottom: 5px;
+}
+
+.btn {
+  font-family: 'Play', sans-serif;
+  margin-bottom: 5px;
+}
+
+.btn-info {
+  background-color: rgb(49, 112, 143); 
+  border-color: black;
+}
+
+.btn-info:hover {
+  text-shadow: 2px 2px 4px #000000;
+  background-color: #589BB8;
+  border-color: black;
+}
+
+.btn-quicksignin {
+  margin-left: 5px;
+  color: white;
+  width: 150px;
+  background-color: #3E90D4;
+}
+
+.btn-quicksignin:hover {
+  text-shadow: 2px 2px 4px #000000;
+  background-color: #589BB8;
+  border-color: black;
+}
+
+.btn-primary {
+  box-shadow: inset 0 0 10px #000000;
+  background-color: gray;
+  border-color: black;
+}
+
+.btn-primary:hover {
+  text-shadow: 2px 2px 4px #000000;
+  background-color: #589BB8;
+}
+
+.navbar-brand:hover {
+  color: #589BB8;
+}
+
+#nav.affix {
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  z-index:2000;
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+#sidebar.affix-top {
+  position: static;
+}
+
+#sidebar.affix {
+  position: fixed;
+  top: 80px;
+}
+
+.login {
+  align-content: center;
+}
+
+#widget {
+  width: 100px;
+}
+
+/***********************************************************************************************/
+/* Button */
+/***********************************************************************************************/
+.go-top {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  padding: 1em;
+  display: none;
+}
+
+.go-top:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form_bg {
+  text-align: center;
+  background-color:#eee;
+  color:#666;
+  padding:20px;
+  border-radius:10px;
+  position: relative;
+  border:1px solid #fff;
+  margin: auto;
+  margin-top: 40px;
+  width: 400px;
+  height: auto;
+}
+
+#myModal {
+top:5%;
+outline: none;
+}
+
+.modal-body {
+  height: 75vh;
+}
+
+.modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #D2D2D2;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+  color: #333333;
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #333333;
+}
+
+a:link {
+  color: #4A4A4A;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #208FE3;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4EBBE2;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #38D4ED;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

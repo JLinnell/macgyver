@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans",
+    sans-serif;
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .hack-search-btn, 
+  .signup-btn,
+  .login-btn {
+    background-color: antiquewhite;
+    padding: 5px;
+    height: 28px;
+    font-weight: 500
+  }
+
+  footer {
+    padding: 1% 0;
+    background-color: aliceblue;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  
+  .col-3 {
+    min-height: 200px;
+    padding: 30px 15px;
+    background-color: rgb(129, 248, 208);
+  }
+  
+  .col-3:nth-child(even) {
+    background-color: rgb(131, 229, 253);
+  }
+  
+  p {
+    margin: 0 auto;
+    max-width: 650px;
+  }
+  
+  p + p {
+    margin-top: 15px;
+  }
+  

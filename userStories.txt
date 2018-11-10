@@ -1,0 +1,9 @@
+As a USER, I will be able to REGISTER and create an account and a profile.
+As a USER, I will be able to LOGIN to watch my profile and my things and lifehacks.
+As a GUEST, I will be able to SEARCH lifehacks and have a list of ideas for my things.
+As a USER, I will be able to SUBMIT an item that I have and be shown a list of lifehacks that use that item.
+As a USER, I will be CONNECTED to other users who may desire an object I have or have an object I desire to trade without monetary payment.
+As a USER, I will be able to POST lifehacks I have found or created for other users to see.
+As a USER, I will be able to SHARE lifehacks on my profile.
+As a USER, I will be able to DELETE lifehacks I have saved on my profile.
+As a USER, I will be able to FOLLOW other profiles 
