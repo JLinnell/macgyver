@@ -19,15 +19,12 @@ class Header extends Component {
   export default Header;*/
 
 import React, { Component } from 'react';
-
-
 import './Header.css';
 
 class Header extends Component {
 
     constructor(props) {
         super(props);
-        this.toggle = this.toggle.bind(this);
         this.state = {
             isOpen: false
         };
@@ -35,12 +32,6 @@ class Header extends Component {
 
     
 	
-  	toggle() {
-		this.setState({
-			isOpen: !this.state.isOpen
-		});
-  	}
-
   	render() {
     	return (
 			<div>

@@ -80,7 +80,7 @@ class SignUp extends Component {
 	   							Sign Up
 	   							</button>
 			                </div> 
-			                <div style={{ marginTop: 10 }}>Already have an account?<Link to={'/signin'}> Sign In</Link></div>
+			                <div style={{ marginTop: 10 }}>Already have an account?<Link to={'/login'}>Log In</Link></div>
 			            </form>
 			        </div>
 			    </div>

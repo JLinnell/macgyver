@@ -23,7 +23,7 @@ class Navbar extends Component {
   import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import './Header.css';
+/*import './Header.css';*/
 
 class Navbar extends Component {
 	render() {
@@ -39,7 +39,7 @@ class Navbar extends Component {
 			                    <a className="nav-link" href="#details">Details</a>
 			                </li>
 			                <li className="nav-item">
-			                	<Link className="nav-link" to={'/signin'}>Sign In</Link>
+			                	<Link className="nav-link" to={'/signup'}>Sign Up</Link>
 			                </li>
 			            </ul>
 			        </div>
