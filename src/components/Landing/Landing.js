@@ -1,39 +1,21 @@
-/*import React, { Component } from 'react';
+import React, { Component } from 'react';
 import './Landing.css';
-import Details from './Details';
+import HackList from '../HackList/HackList';
+//import { fetchByItem } from '../../actions/hackActions';
 
 
-class Landing extends Component {
-    render() {
-      return (
-        <div className="landing">
-          
-          <h2>Start turning your trash into treasures!</h2>
-          <input type="text" placeholder="item to use"></input>
-          <button type="submit" class="hack-search-btn">Search</button>
-          <Details />
-        </div>
-      );
-    }
-  }
-  
-  export default Landing;*/
-
-  import React, { Component } from 'react';
-import Navbar from '../Header/Navbar';
-import Details from './Details';
-import Footer from '../Footer/Footer';
-import './Landing.css';
-
-
+ /*onClick(event) {
+	event.preventDefault();
+    this.props.fetchByItem(landingSearch)
+}*/
 
 class Landing extends Component {
 	render() {
 		return (
-			<div>
-				<Navbar />
-				<Details />
-				<Footer />
+			<div className="Landing">
+				<input type="text" className="landingSearch" placeholder="item to use"></input>
+				<button type="submit" className="hack-search-btn" >Search</button>
+				<HackList />
 			</div>
 		)
 	}

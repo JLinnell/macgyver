@@ -1,30 +1,61 @@
 * {
     box-sizing: border-box;
   }
-  
+  /*search for wallpaper for cover image*/
   body {
-    font-family: "Open Sans",
-    sans-serif;
+    font-family: "Open Sans", sans-serif;
+     height: 100vh;
+    width: 100%;
+   background-image: url('../../assets/background.jpg');
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
     font-size: 20px;
-    color: #444;
     text-align: center;
     line-height: 1.5;
+    padding-top: 12rem;
   }
-  
-  .hack-search-btn, 
-  .signup-btn,
-  .login-btn {
-    background-color: antiquewhite;
-    padding: 5px;
-    height: 28px;
-    font-weight: 500
+/*.swissImg {
+  height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    padding-top: 12rem;
+}*/
+
+  input {
+    padding: 7px;
+    padding-right: 35px;
+    border: 1px solid #3e90d4;
   }
 
-  footer {
-    padding: 1% 0;
-    background-color: aliceblue;
+  .landingSearch {
+    height: 2.5rem;
+    width: 30%;
+    margin: 15px;
+    margin-left: 42px;
+    padding-left: 50px;
+    padding-right: 55px;
   }
   
+  .hack-search-btn {
+    padding: 9px;
+    height: 40px;
+    width: 70px;
+    border: 1px solid #3e90d4;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    font-family: 'Play', sans-serif;
+  }
+  
+  .hack-search-btn:hover {
+    background: #ccc;
+    cursor: pointer;
+    color: rgb(17, 160, 17);
+  }
+
   nav {
     position: fixed;
     top: 0;
@@ -33,23 +64,18 @@
     z-index: 10;
   }
   
-  
   .col-3 {
     min-height: 200px;
     padding: 30px 15px;
-    background-color: rgb(129, 248, 208);
+    background-color: rgb(19, 107, 78);
   }
   
   .col-3:nth-child(even) {
-    background-color: rgb(131, 229, 253);
+    background-color: rgb(3, 133, 165);
   }
   
-  p {
-    margin: 0 auto;
-    max-width: 650px;
+ ul {
+    list-style-type: none;
+    float: right;
+    display: flex;
   }
-  
-  p + p {
-    margin-top: 15px;
-  }
-  

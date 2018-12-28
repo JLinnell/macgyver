@@ -1,36 +1,21 @@
 import React, { Component } from 'react';
-/*import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';*/
-
-// CSS
 import './Home.css';
-
-// Components
-import Header from '../Header/Header';
-import LogIn from '../Header/LogIn';
-import SignUp from '../Header/SignUp';
-import Landing from '../Landing/Landing';
+import HackList from '../HackList/HackList';
+import HackForm from '../HackForm/HackForm';
 
 class Home extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			uid: null
-		}
-	}
-
+	
 	render() {
 
 		return (
-        <div>
-          <Header />
-          <SignUp />
-          <LogIn/>
-          <Landing/>
-
-          </div>
+        <div className="Home">
+		  <HackForm />
+		 <HackList />
+        </div>
 		)
 
 	}
 }
 
 export default Home;
+

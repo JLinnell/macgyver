@@ -1,0 +1,154 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Play', sans-serif;
+  color: white;
+  position: relative;
+}
+
+.navbar-nav {
+  width: 25%;
+  display: inline-flex;
+  color: #000000;
+  padding-right: 95px;
+}
+
+.nav-link {
+  color: #f4f819;
+}
+
+#mainNav {
+  display: flex;
+  font-family: 'Oxygen', sans-serif;
+  align-content: center;
+  text-transform: uppercase;
+  background-color: #3e90d4;
+  opacity: 0.8;
+  height: 9.5rem;
+
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+
+h4 {
+  font-family: 'Play', sans-serif;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin: 0 auto;
+  display: inline
+}
+
+.demoUser {
+  border: 1px solid black;
+}
+.demo-creds {
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+}
+
+  @media (min-width: 768px) {
+    #mainNav a {
+      padding: 5px;
+  }
+
+  #mainNav .nav-link.active:hover {
+    color: white;
+  }
+}
+
+@media (min-width: 768px) {
+  .masthead {
+    height: 750px;
+    padding: 0;
+  }
+
+  .masthead .intro-body .brand-heading {
+    margin-top: 200px;
+    text-align: right;
+    color: #31708F;
+    font-size: 100px;
+  }
+
+  .masthead .intro-body .intro-text {
+    text-align: right;
+    color: black;
+    font-size: 22px;
+  }
+}
+
+.navbarL-brand {
+  font-size: 30px;
+  width: 200px;
+  display: inline-block;
+}
+
+.content-section {
+  padding-top: 100px;
+}
+  
+.details-section {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  color: white;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.signUpForm, .logInForm {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: 767px) {
+  .logos {
+    height: 550px;
+    width: 100%;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+}
+
+@media (min-width: 767px) {
+  .content-section {
+    padding-top: 150px;
+  }
+
+  .details-section {
+    padding: 150px 0;
+  }
+
+  #map {
+    height: 350px;
+    margin-top: 250px;
+  }
+}

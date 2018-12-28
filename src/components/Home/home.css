@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    text-align: center;
+    width: 400px;
+    margin: 20px auto auto auto;
+    position: relative;
+    padding: 40px;
+}
+
+fieldset {
+    border: none;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+form legend {
+    font-size: 30px;
+}
+
+img {
+    height: 20px;
+    float: right;
+}
+
+ul {
+    width: 100%;
+    float: none;
+    display: inline-block;
+}

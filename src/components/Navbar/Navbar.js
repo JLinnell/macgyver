@@ -1,0 +1,40 @@
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
+//import { fetchAllHacks, deleteHack, createHack } from '../../actions/hackActions';
+
+
+
+class Navbar extends Component {
+
+	constructor(props) {
+        super(props);
+        this.state = {
+            isOpen: false
+        };
+    }
+
+	render() {
+		return (
+			<nav id="mainNav" className="navbar">
+			    <div className="container">
+			        	<p className="navbarL-brand">Macgyver</p>
+						<p className="subtitle">Turn Your Trash Into Treasures!</p>
+			            <ul className="navbar-nav ml-auto">
+			                <li className="nav-item">
+			                    <Link className="nav-link"  to={'/details'}>Details</Link>
+			                </li>
+			                <li className="nav-item">
+			                	<Link className="nav-link" to={'/signup'}>Signup</Link>
+			                </li>
+							<li className="nav-item">
+                				<Link className="nav-link main"  to={'/'}>Back</Link>
+           					 </li>
+			            </ul>
+			        </div>
+			</nav>
+		)
+	}
+}
+
+export default Navbar;

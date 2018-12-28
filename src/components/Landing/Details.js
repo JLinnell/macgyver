@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Landing.css';
 
 
 class Details extends Component {
     render() {
       return (
+        <div>
         <div className="steps-container">
           <h2>How it works</h2>
                                 <div class="col-3">
@@ -23,7 +25,7 @@ class Details extends Component {
                                     <div class="cont saveShare">
                                         <p class="cont-title"><b>Save and Share Hacks</b></p>
                                         <p class="cont-description">Description goes here</p>
-                                    </div>
+                       </div>            </div>
           </div>
         </div>
       );
