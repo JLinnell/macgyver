@@ -1,6 +1,6 @@
 import axios from 'axios';
 //const API_URL = 'http://localhost:1212';
-const API_URL = 'https://guarded-refuge-52889.herokuapp.com/';
+const API_URL = 'https://guarded-refuge-52889.herokuapp.com';
 
 
 
