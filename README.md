@@ -7,16 +7,16 @@ Demo the app [here](https://macgyver-5a0a0.firebaseapp.com/)
 
 ## Screenshots
 Landing page/item submission:
-![Alt text](/screenshots/scr7.png)
+![Alt text](/screenshots/src7.png)
 
 sign up/Log in modal:
-![Alt text](/screenshots/scr8.png)
-![Alt text](/screenshots/scr9.png)
+![Alt text](/screenshots/src8.png)
+![Alt text](/screenshots/src9.png)
 Home page:
-![Alt text](/screenshots/scr10.png)
+![Alt text](/screenshots/src10.png)
 
 Newly created hack:
-![Alt text](/screenshots/scr11.png)
+![Alt text](/screenshots/src11.png)
 
 
 
