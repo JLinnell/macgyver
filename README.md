@@ -13,7 +13,7 @@ sign up/Log in modal:
 ![Alt text](/screenshots/scr8.png)
 ![Alt text](/screenshots/scr9.png)
 Home page:
-![Alt text](/screenshots/Screenshot(10).png)
+![Alt text](/screenshots/scr10.png)
 
 Newly created hack:
 ![Alt text](/screenshots/scr11.png)
