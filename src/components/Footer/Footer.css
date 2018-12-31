@@ -3,12 +3,12 @@ footer{
     font-family: 'Oxygen', sans-serif;
     align-content: center;
     text-transform: uppercase;
-    z-index: 0;
+    z-index: 20;
     background-color: #3e90d4;
     opacity: 0.8;
-    padding: 1.5rem;
-    margin-top: 15rem;
-    text-align: center;
+    padding: 0.3rem;
+    bottom: 0;
+    margin: 0;
 }
 
 footer p {
@@ -16,5 +16,4 @@ footer p {
     margin: 9px;
     color: #000000;
     font-weight: 500;
-    z-index: 10;
 }

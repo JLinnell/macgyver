@@ -1,28 +1,19 @@
 * {
     box-sizing: border-box;
   }
-  /*search for wallpaper for cover image*/
+
   body {
     font-family: "Open Sans", sans-serif;
-     height: 100vh;
+    height: 100vh;
     width: 100%;
-   background-image: url('../../assets/background.jpg');
+    background-image: url('../../assets/background.jpg');
     background-size: cover;
     display: table;
     background-attachment: fixed;
     font-size: 20px;
     text-align: center;
-    line-height: 1.5;
-    padding-top: 12rem;
+    padding-top: 8rem;
   }
-/*.swissImg {
-  height: 100vh;
-    width: 100%;
-    background-size: cover;
-    display: table;
-    background-attachment: fixed;
-    padding-top: 12rem;
-}*/
 
   input {
     padding: 7px;
@@ -63,15 +54,22 @@
     right: 0;
     z-index: 10;
   }
+
+  h2{
+    color: rgb(224, 170, 34);
+  }
   
   .col-3 {
-    min-height: 200px;
+    height: 250px;
     padding: 30px 15px;
-    background-color: rgb(19, 107, 78);
+    background-color: rgb(78, 179, 145);
+    opacity: 0.9;
   }
   
   .col-3:nth-child(even) {
-    background-color: rgb(3, 133, 165);
+    background-color: rgb(112, 223, 186);
+    color: rgb(90, 88, 88);
+    opacity: 0.9;
   }
   
  ul {

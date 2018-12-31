@@ -9,14 +9,6 @@ class SignUp extends Component {
 		this.state = {
 			email: '',
 			password: '',
-			/*token: '',
-			secret: '',
-			user: '',
-			uid: '',
-			error: {
-				code: '',
-				message: '',
-			}*/
 		}
 	}
 	handleChange(event) {
@@ -44,26 +36,6 @@ class SignUp extends Component {
       password: "",
     });
   }
-	
-	/*handleSubmit(event) {
-		event.preventDefault();
-		let that = this;
-		console.log(this.state);
-		axios.post('http://localhost:1212/users/register', {email: this.state.email, password: this.state.password})
-			.then(function (response) {
-				// handle success
-				that.props.history.push('/login');
-				console.log(response);
-			})
-			.catch(function (error) {
-				// handle error
-				console.log(error);
-			})
-		}	*/
-
-
-	
-
 	render() {
 		return (
 			<div className="container">
@@ -118,10 +90,3 @@ const mapStateToProps = (rootReducer) => {
 }
 
 export default connect(mapStateToProps, {registerUser, loginUser})(SignUp);
-
-// {localStorage.getItem('token') && (<Redirect to='/home'/>)}
-
-
-
-
-

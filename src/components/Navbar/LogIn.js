@@ -11,13 +11,6 @@ class LogIn extends Component {
 		this.state = {
 			email: '',
 			password: '',
-			/*token: '',
-			secret: '',
-			user: '',
-			error: {
-				code: '',
-				message: '',
-			}*/
 		}
 	}
 			
@@ -29,30 +22,10 @@ class LogIn extends Component {
 		console.log(event.currentTarget.value);
 		}
 	
-	/*handleSubmit(event) {
-		event.preventDefault();
-		console.log(this.state);
-		axios.post('http://localhost:1212/users/login', {email: this.state.email, password: this.state.password})
-			.then(function (response) {
-				// handle success
-				console.log(response.data.data);
-				localStorage.setItem('token', response.data.data.token);
-				localStorage.setItem('uid', response.data.data.id);
-				window.location.pathname = 'home';
-
-			})
-			.catch(function (error) {
-				// handle error
-				console.log(error);
-			})
-		}*/	
-
 		loginUser(event){
 			event.preventDefault();
 			
 			this.props.loginUser(this.state)
-			//window.location.pathname = 'home'
-			//browserHistory.push('/home')
 			this.props.history.push('/home')
 
 		
@@ -132,7 +105,3 @@ const mapStateToProps = (rootReducer) => {
 }
 
 export default connect(mapStateToProps, {loginUser})(LogIn);
-
-
-//cut from line 104
-//{localStorage.getItem('token') && (<Redirect to='/home'/>)}

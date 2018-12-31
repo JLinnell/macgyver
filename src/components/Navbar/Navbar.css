@@ -7,18 +7,15 @@ body {
 }
 
 .navbar-nav {
-  width: 25%;
-  display: inline-flex;
+  display: flex;
   color: #000000;
-  padding-right: 95px;
 }
 
 .nav-link {
-  color: #f4f819;
+color: gold;
 }
 
 #mainNav {
-  display: flex;
   font-family: 'Oxygen', sans-serif;
   align-content: center;
   text-transform: uppercase;
@@ -77,6 +74,9 @@ h4 {
     height: 750px;
     padding: 0;
   }
+  #mainNav a {
+    padding: 5px;
+}
 
   .masthead .intro-body .brand-heading {
     margin-top: 200px;
@@ -121,6 +121,9 @@ h4 {
 }
 
 @media (min-width: 767px) {
+  #mainNav a {
+    padding: 5px;
+}
   .logos {
     height: 550px;
     width: 100%;
@@ -139,6 +142,9 @@ h4 {
 }
 
 @media (min-width: 767px) {
+  #mainNav a {
+    padding: 5px;
+}
   .content-section {
     padding-top: 150px;
   }
