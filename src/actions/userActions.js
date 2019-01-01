@@ -6,6 +6,7 @@ const API_URL = 'https://guarded-refuge-52889.herokuapp.com';
 
 export const REGISTER = "REGISTER";
 export const LOGIN = "LOGIN";
+export const LOGOUT = "LOGOUT";
 
 
 export const registerUser = (user) => {
@@ -22,7 +23,7 @@ export const registerUser = (user) => {
 
 export const loginUser = (user) => {
   return (dispatch) => {
-    axios.post(`${API_URL}/users/login/`, user)
+    axios.post(`${API_URL}/users/login/`, user)  
     .then( (request) => {
         dispatch({
           type: LOGIN, 
@@ -31,3 +32,7 @@ export const loginUser = (user) => {
     })
   }  
 }  
+
+export const logoutUser = () => ({
+  type: LOGOUT
+});

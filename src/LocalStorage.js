@@ -5,5 +5,3 @@ export const saveAuthInfo = (token, userId, email) => {
       localStorage.setItem('email', email);
     } catch(error) {}
   };
-  
- 

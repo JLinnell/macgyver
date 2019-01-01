@@ -63,3 +63,6 @@ const mapStateToProps = (rootReducer) => {
     return {hack: rootReducer.hack}
 }
 export default connect(mapStateToProps, {createHack})(HackForm);
+
+// SIGN OUT!!!
+// localStorage.removeItem('token')
