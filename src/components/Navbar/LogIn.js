@@ -8,7 +8,9 @@ class LogIn extends Component {
 		super(props);
 		this.state = {
 			email: '',
+			emailError: '',
 			password: '',
+			passwordError: ''
 		}
 	}
 			
@@ -19,23 +21,55 @@ class LogIn extends Component {
 		console.log(event.currentTarget.attributes["name"].value);
 		console.log(event.currentTarget.value);
 		}
+
+		validate = () => {
+			let isError = false;
+			const errors = {
+			  emailError: "",
+			  passwordError: ""
+			};
+
+		
+			if (this.state.email.indexOf("@") === -1) {
+			  isError = true;
+			  console.log("Requires valid email");
+			  errors.emailError = "Valid email required";
+			}
+
+			if (this.state.password.length < 10) {
+				isError = true;
+				console.log("Password needs to be atleast 10 characters long");
+				errors.passwordError = "Valid password required";
+			  }
+		
+			this.setState({
+			  ...this.state,
+			  ...errors
+			});
+		
+			return isError;
+		  };
 	
-		loginUser(event){
-			event.preventDefault();
-			
+		loginUser(e){
+			e.preventDefault();
+			const err = this.validate();
+			if (!err) {
 			this.props.loginUser(this.state)
 			this.props.history.push('/home')
 
 		
-		
+		///"email" was "username" in setState
 			this.setState({
-			  username: "",
-			  password: ""
+			  email: "",
+			  emailError: "",
+			  password: "",
+			  passwordError: ""
+
 			});
 		
 		  }
 
-
+		}
 	
 	 
 	render() {
@@ -55,6 +89,7 @@ class LogIn extends Component {
 									placeholder="email"
 									value={this.state.email}
 			                    />
+							<p>{this.state.emailError}</p>
 			                </div>
 			                <div className="form-group">
 			                    <input
@@ -66,11 +101,14 @@ class LogIn extends Component {
 									value={this.state.password}
 			                    />
 			                </div>
+							<p>{this.state.passwordError}</p>
 			                <br/>
 			                <div className="align-center">
                         <button
                           className="btn btn-success"
-                          onClick={this.loginUser.bind(this)}> Log In
+						//   onClick={this.loginUser.bind(this)}>
+						onClick={e => this.loginUser(e)}> 
+						Log In
                         </button>
 						
                         <div className="demoUser">
@@ -78,7 +116,7 @@ class LogIn extends Component {
 								<p className="demo-creds">Demo User</p>
 							</div>
 							<div className="col-6">
-								<p className="demo">Email: <span className="italic">demo1</span></p>
+								<p className="demo">Email: <span className="italic">demo@demo.com</span></p>
 							</div>
 							<div className="col-6">
 								<p className="demo">Password: <span className="italic">passwordispassword</span></p>
@@ -97,9 +135,8 @@ class LogIn extends Component {
 
 
 const mapStateToProps = (rootReducer) => {
-	return {
-			user: rootReducer.user
-}
+	return {user: rootReducer.user}
+			
 }
 
 export default connect(mapStateToProps, {loginUser})(LogIn);
