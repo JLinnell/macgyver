@@ -58,7 +58,6 @@ class LogIn extends Component {
 			this.props.history.push('/home')
 
 		
-		///"email" was "username" in setState
 			this.setState({
 			  email: "",
 			  emailError: "",
@@ -106,7 +105,6 @@ class LogIn extends Component {
 			                <div className="align-center">
                         <button
                           className="btn btn-success"
-						//   onClick={this.loginUser.bind(this)}>
 						onClick={e => this.loginUser(e)}> 
 						Log In
                         </button>
