@@ -17,7 +17,8 @@ class Navbar extends Component {
 		return (
 			<nav id="mainNav" className="navbar">
 			    <div className="container">
-			        	<p className="navbarL-brand">Macgyver</p>
+			        	<Link  className="navbarL-brand" to={'/'}>Macgyver</Link>
+						<br />
 						<p className="subtitle">Turn Your Trash Into Treasures!</p>
 			            <ul className="navbar-nav ml-auto">
 			                <li className="nav-item">
@@ -26,9 +27,9 @@ class Navbar extends Component {
 			                <li className="nav-item">
 			                	<Link className="nav-link" to={'/signup'}>Signup</Link>
 			                </li>
-							<li className="nav-item">
-                				<Link className="nav-link main"  to={'/'}>Back</Link>
-           					 </li>
+							{/* <li className="nav-item">
+                				<Link className="nav-link main"  to={'/'}>Macgyver</Link>
+           					 </li> */}
 			            </ul>
 				
 					<div>{ this.state.showLogOut ? <LogOut /> : null }</div>

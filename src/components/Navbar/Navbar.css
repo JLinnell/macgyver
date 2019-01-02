@@ -7,11 +7,13 @@ body {
 }
 
 .navbar-nav {
-  display: flex;
   color: #000000;
+  float: right;
+  width: 55%;
 }
 
-.nav-link {
+.nav-link,
+.navbarL-brand:hover {
 color: gold;
 }
 
@@ -39,7 +41,7 @@ h4 {
 .subtitle {
   font-size: 16px;
   margin: 0 auto;
-  display: inline
+  /* display: inline */
 }
 
 .logOut {
@@ -58,6 +60,9 @@ h4 {
   margin-top: 1.5rem;
 
 
+}
+.navbarL-brand {
+  color: #ffffff;
 }
 
 .demoUser {
