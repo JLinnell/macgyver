@@ -55,20 +55,20 @@
     z-index: 10;
   }
 
-  h2{
+  /* h2{
     color: rgb(224, 170, 34);
   }
-  
+   */
   .col-3 {
     height: 250px;
     padding: 30px 15px;
-    background-color: rgb(78, 179, 145);
+    background-color: #3e90d4;
     opacity: 0.9;
   }
   
   .col-3:nth-child(even) {
-    background-color: rgb(112, 223, 186);
-    color: rgb(90, 88, 88);
+    background-color: rgb(112, 175, 223);
+    color: #292626;
     opacity: 0.9;
   }
   

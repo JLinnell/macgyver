@@ -22,7 +22,7 @@ class Navbar extends Component {
 						<p className="subtitle">Turn Your Trash Into Treasures!</p>
 			            <ul className="navbar-nav ml-auto">
 			                <li className="nav-item">
-			                    <Link className="nav-link"  to={'/details'}>Details</Link>
+			                    <Link className="nav-link"  to={'/details'}>How It Works</Link>
 			                </li>
 			                <li className="nav-item">
 			                	<Link className="nav-link" to={'/signup'}>Signup</Link>
