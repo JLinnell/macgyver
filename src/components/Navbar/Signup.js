@@ -103,7 +103,7 @@ class SignUp extends Component {
 			                
 			                <div className="align-center">
 			                   <button
-	   								className="btn btn-success"
+	   								className="btn-success"
 									   type="submit"
 									onClick={e => this.registerUser(e)}
 									   >

@@ -18,7 +18,7 @@ deleteClicked(id) {
     render() {
         return(
             <div>
-                <ul>
+                <ul className="results-container">
                 { 
                     this.props.hack.all.map((hack,index) => {
                     return <li className="results" key={hack._id}>

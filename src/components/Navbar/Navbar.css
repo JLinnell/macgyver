@@ -1,24 +1,24 @@
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Play', sans-serif;
+  font-family: 'Bitter', sans-serif;
   color: white;
   position: relative;
 }
 
 .navbar-nav {
-  color: #000000;
+  /* color: #000000; */
   float: right;
   width: 55%;
 }
 
-.nav-link,
+/* .nav-link,
 .navbarL-brand:hover {
 color: gold;
-}
+} */
 
 #mainNav {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Bitter', sans-serif;
   align-content: center;
   text-transform: uppercase;
   background-color: #3e90d4;
@@ -61,8 +61,21 @@ h4 {
 
 
 }
+
+p {
+  font-size: 20px;
+}
+
 .navbarL-brand {
+  font-size: 40px;
+}
+
+.navbarL-brand, .nav-link {
   color: #ffffff;
+}
+
+.navbarL-brand:hover, .nav-link:hover {
+  color: gold ;
 }
 
 .demoUser {
@@ -87,9 +100,7 @@ h4 {
       padding: 5px;
   }
 
-  #mainNav .nav-link.active:hover {
-    color: white;
-  }
+ 
 }
 
 @media (min-width: 768px) {
@@ -143,6 +154,19 @@ h4 {
   position: relative;
 }
 
+.btn-success {
+  width: 150px;
+  height: 28px;
+  margin-bottom: 10px;
+}
+
+.btn-success:hover {
+  text-shadow: 2px 2px 4px #000000;
+  background-color: #0E9300;
+  border-color: #00000061;
+  color: white;  
+}
+
 @media (min-width: 767px) {
   #mainNav a {
     padding: 5px;
@@ -179,5 +203,29 @@ h4 {
   #map {
     height: 350px;
     margin-top: 250px;
+  }
+}
+
+@media (max-width: 700px) {
+  #mainNav {
+    padding: 2rem;
+    height: 10rem;
+  }
+
+  .results {
+    width: 95%;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .landingSearch  {
+    width: 70% !important;
+    margin: 10px 0 !important;
+  }
+
+  .hack-search-btn {
+    width: 70% !important;
   }
 }

@@ -104,7 +104,7 @@ class LogIn extends Component {
 			                <br/>
 			                <div className="align-center">
                         <button
-                          className="btn btn-success"
+                          className="btn-success"
 						onClick={e => this.loginUser(e)}> 
 						Log In
                         </button>

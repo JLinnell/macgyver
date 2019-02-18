@@ -38,15 +38,6 @@
   background-color: lightgray;
 }
 
-.btn-success {
-  width: 150px;
-}
-
-.btn-success:hover {
-  text-shadow: 2px 2px 4px #000000;
-  background-color: #0E9300;
-  border-color: black;
-}
 
 .btn {
   font-family: 'Play', sans-serif;
