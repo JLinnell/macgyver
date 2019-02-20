@@ -13,8 +13,8 @@ class Landing extends Component {
 	render() {
 		return (
 			<div className="Landing">
-				<input type="text" className="landingSearch" placeholder="item to use"></input>
-				<button type="submit" className="hack-search-btn" >Search</button>
+				{/* <input type="text" className="landingSearch" placeholder="item to use"></input>
+				<button type="submit" className="hack-search-btn" >Search</button> */}
 				<HackList />
 			</div>
 		)
