@@ -17,6 +17,11 @@ body {
 color: gold;
 } */
 
+.nav-link,
+.navbarL-brand {
+  text-decoration: none;
+}
+
 #mainNav {
   font-family: 'Bitter', sans-serif;
   align-content: center;
