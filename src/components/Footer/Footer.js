@@ -5,7 +5,7 @@ class Footer extends Component {
     render() {
       return (
         <footer>
-        <p>A Thinkful capstone project by Judy Linnell</p>
+        <p></p>
     </footer>
       );
     }
