@@ -27,7 +27,7 @@ export const createHack = (hackData) => {
 
 export const fetchAllHacks = () => {
   return (dispatch) => {
-    axios.get(`${API_URL}/hacks/all`, hackData)
+    axios.get(`${API_URL}/hacks/all`)
     .then( (response) => {
         dispatch({type: FETCH_ALL_HACKS, payload: response.data});
     })
