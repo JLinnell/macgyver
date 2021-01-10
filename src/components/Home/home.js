@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Home.css';
+import './home.css';
 import HackList from '../HackList/HackList';
 import HackForm from '../HackForm/HackForm';
 import LogOut from '../Navbar/LogOut';

@@ -4,7 +4,7 @@ import Details from './Landing/Details';
 import Landing from './Landing/Landing';
 import Signup from './Navbar/Signup';
 import LogIn from './Navbar/LogIn';
-import Home from './Home/Home';
+import Home from './Home/home';
 import HackForm from './HackForm/HackForm';
 import HackList from './HackList/HackList';
 
