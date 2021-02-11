@@ -27,9 +27,6 @@ class Navbar extends Component {
 			                <li className="nav-item">
 			                	<Link className="nav-link" to={'/logIn'}>Sign in</Link>
 			                </li>
-							<li className="nav-item">
-                				<Link className="nav-link main"  to={'/'}>Macgyver</Link>
-           					 </li>
 			            </ul>
 				
 					<div>{ this.state.showLogOut ? <LogOut /> : null }</div>
