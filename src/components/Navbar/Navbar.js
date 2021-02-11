@@ -25,11 +25,11 @@ class Navbar extends Component {
 			                    <Link className="nav-link"  to={'/details'}>How It Works</Link>
 			                </li>
 			                <li className="nav-item">
-			                	<Link className="nav-link" to={'/signup'}>Signup</Link>
+			                	<Link className="nav-link" to={'/logIn'}>Sign in</Link>
 			                </li>
-							{/* <li className="nav-item">
+							<li className="nav-item">
                 				<Link className="nav-link main"  to={'/'}>Macgyver</Link>
-           					 </li> */}
+           					 </li>
 			            </ul>
 				
 					<div>{ this.state.showLogOut ? <LogOut /> : null }</div>

@@ -34,14 +34,6 @@ export const fetchAllHacks = () => {
   }  
 }   
 
-// export const fetchAllHacks = () => {
-//   return (dispatch) => {
-//     axios.get(`${API_URL}/hacks/all/${localStorage.getItem('token')}`)
-//     .then( (response) => {
-//         dispatch({type: FETCH_ALL_HACKS, payload: response.data});
-//     })
-//   }  
-// }   
 
 export const fetchByItem = (landingSearch) => {
   return (dispatch) => {
