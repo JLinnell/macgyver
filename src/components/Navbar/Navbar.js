@@ -7,7 +7,7 @@ class Navbar extends Component {
 	constructor(props) {
 		super(props);
         this.state = {
-		 isOpen: false,
+			isOpen: false,
 			showLogOut: false
         };
 	}
