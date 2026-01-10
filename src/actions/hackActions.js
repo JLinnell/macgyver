@@ -4,26 +4,36 @@ export const FETCH_ALL_HACKS = "FETCH_ALL_HACKS";
 export const DELETE_HACK = "DELETE_HACK";
 export const CREATE_HACK = "CREATE_HACK";
 export const FETCH_HACKS_WITH_ITEM = "FETCH_HACKS_WITH_ITEM";
-// const API_URL = 'http://localhost:1212';
-const API_URL = 'https://guarded-refuge-52889.herokuapp.com';
+const API_URL = process.env.NODE_ENV === 'production' 
+  ? 'https://macgyver-api.onrender.com'
+  : 'http://localhost:1212';
 
 
 export const testThunkAction = () => {
   return (dispatch) => {
     setTimeout(function() {
-      dispatch({type: TEST, payload: "Jon"});
+      dispatch({type: TEST, payload: "test"});
     }, 1500);
   }
 }
 
 export const createHack = (hackData) => {
   return (dispatch) => {
-    axios.post(`${API_URL}/hacks/create/${localStorage.getItem('token')}`, hackData)
-    .then( (response) => {
+    const token = localStorage.getItem('token');
+    
+    axios.post(`${API_URL}/hacks/create`, hackData, {
+      headers: {
+        'Authorization': `Bearer ${token}`
+      }
+    })
+    .then((response) => {
       dispatch({type: CREATE_HACK, payload: response.data});
-  }) 
+    })
+    .catch((error) => {
+      console.error('Create hack error:', error);
+    });
   }  
-}  
+}
 
 export const fetchAllHacks = () => {
   return (dispatch) => {

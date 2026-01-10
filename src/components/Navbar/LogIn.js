@@ -10,7 +10,8 @@ class LogIn extends Component {
 			email: '',
 			emailError: '',
 			password: '',
-			passwordError: ''
+			passwordError: '',
+			isLoading: false
 		}
 	}
 			
@@ -20,55 +21,64 @@ class LogIn extends Component {
 		this.setState({[stateKey]: event.currentTarget.value});
 		console.log(event.currentTarget.attributes["name"].value);
 		console.log(event.currentTarget.value);
+	}
+
+	validate = () => {
+		let isError = false;
+		const errors = {
+		  emailError: "",
+		  passwordError: ""
+		};
+
+		if (this.state.email.indexOf("@") === -1) {
+		  isError = true;
+		  console.log("Requires valid email");
+		  errors.emailError = "Valid email required";
 		}
 
-		validate = () => {
-			let isError = false;
-			const errors = {
-			  emailError: "",
-			  passwordError: ""
-			};
-
-		
-			if (this.state.email.indexOf("@") === -1) {
-			  isError = true;
-			  console.log("Requires valid email");
-			  errors.emailError = "Valid email required";
-			}
-
-			if (this.state.password.length < 10) {
-				isError = true;
-				console.log("Password needs to be atleast 10 characters long");
-				errors.passwordError = "Valid password required";
-			  }
-		
-			this.setState({
-			  ...this.state,
-			  ...errors
-			});
-		
-			return isError;
-		  };
+		if (this.state.password.length < 10) {
+			isError = true;
+			console.log("Password needs to be atleast 10 characters long");
+			errors.passwordError = "Valid password required";
+		}
 	
-		loginUser(e){
-			e.preventDefault();
-			const err = this.validate();
-			if (!err) {
-			this.props.loginUser(this.state)
-			this.props.history.push('/home')
+		this.setState({
+		  ...this.state,
+		  ...errors
+		});
+	
+		return isError;
+	};
 
-		
-			this.setState({
-			  email: "",
-			  emailError: "",
-			  password: "",
-			  passwordError: ""
-
-			});
-		
-		  }
-
+	async loginUser(e){
+		e.preventDefault();
+		const err = this.validate();
+		if (!err) {
+			this.setState({ isLoading: true });
+			
+			try {
+				// Wait for the login to complete
+				await this.props.loginUser(this.state);
+				
+				// Only redirect after successful login
+				this.props.history.push('/home');
+				
+				this.setState({
+					email: "",
+					emailError: "",
+					password: "",
+					passwordError: "",
+					isLoading: false
+				});
+			} catch (error) {
+				console.error('Login failed:', error);
+				this.setState({ 
+					isLoading: false,
+					passwordError: "Login failed. Please try again."
+				});
+			}
 		}
+	}
 	
 	 
 	render() {
@@ -88,7 +98,7 @@ class LogIn extends Component {
 									placeholder="email"
 									value={this.state.email}
 			                    />
-							<p>{this.state.emailError}</p>
+								<p>{this.state.emailError}</p>
 			                </div>
 			                <div className="form-group">
 			                    <input
@@ -100,13 +110,15 @@ class LogIn extends Component {
 									value={this.state.password}
 			                    />
 			                </div>
-							<p>{this.state.passwordError}</p>
+								<p>{this.state.passwordError}</p>
 			                <br/>
 			                <div className="align-center">
                         <button
                           className="btn-success"
-						onClick={e => this.loginUser(e)}> 
-						Log In
+						  onClick={e => this.loginUser(e)}
+						  disabled={this.state.isLoading}
+						> 
+						  {this.state.isLoading ? 'Logging in...' : 'Log In'}
                         </button>
 						
                         <div className="demoUser">
@@ -119,7 +131,7 @@ class LogIn extends Component {
 							<div className="col-6">
 								<p className="demo">Password: <span className="italic">passwordispassword</span></p>
 							</div>
-							</div>
+						</div>
                       </div>
 			                <div>Don't have an account?<Link to={'/signup'}> Sign Up </Link>instead</div>
 			            </form>
@@ -134,7 +146,6 @@ class LogIn extends Component {
 
 const mapStateToProps = (rootReducer) => {
 	return {user: rootReducer.user}
-			
 }
 
 export default connect(mapStateToProps, {loginUser})(LogIn);
