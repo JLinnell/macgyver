@@ -18,12 +18,21 @@ export const testThunkAction = () => {
 
 export const createHack = (hackData) => {
   return (dispatch) => {
-    axios.post(`${API_URL}/hacks/create/${localStorage.getItem('token')}`, hackData)
-    .then( (response) => {
+    const token = localStorage.getItem('token');
+    
+    axios.post(`${API_URL}/hacks/create`, hackData, {
+      headers: {
+        'Authorization': `Bearer ${token}`
+      }
+    })
+    .then((response) => {
       dispatch({type: CREATE_HACK, payload: response.data});
-  }) 
+    })
+    .catch((error) => {
+      console.error('Create hack error:', error);
+    });
   }  
-}  
+}
 
 export const fetchAllHacks = () => {
   return (dispatch) => {
